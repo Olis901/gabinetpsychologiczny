@@ -109,10 +109,6 @@
   @keyframes softPulse{ 0%,100%{ box-shadow:0 0 0 0 rgba(99,122,100,.45); } 70%{ box-shadow:0 0 0 8px rgba(99,122,100,0); } }
   .pulse-dot{ animation: softPulse 2s infinite; }
 
-  /* Scroll-reveal */
-  [data-reveal]{ opacity:0; transform:translateY(22px); transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
-  [data-reveal].is-visible{ opacity:1; transform:translateY(0); }
-
   /* FAQ accordion */
   .faq-item[open] .faq-icon{ transform:rotate(45deg); }
   .faq-item summary::-webkit-details-marker{ display:none; }
@@ -178,7 +174,7 @@
 <section id="hero" class="pt-36 pb-24 lg:pt-44 lg:pb-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
 
-    <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] ease-out">
+    <div>
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-6">
         <span class="w-6 h-px bg-gold-500"></span> Prywatny gabinet psychologiczny
       </span>
@@ -222,7 +218,7 @@
 </section>
 
 <!-- ===================== TRUST BAR ===================== -->
-<section class="pb-16" data-reveal>
+<section class="pb-16">
   <div class="max-w-6xl mx-auto px-6 lg:px-10">
     <div class="bg-white/70 backdrop-blur-md border border-white rounded-3xl shadow-sm px-6 sm:px-10 py-7 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-4 text-center">
       <div class="flex flex-col items-center gap-2">
@@ -248,7 +244,7 @@
 <!-- ===================== AREAS OF WORK ===================== -->
 <section id="o-mnie" class="py-24 bg-beige-50">
   <div class="max-w-6xl mx-auto px-6 lg:px-10">
-    <div id="specjalizacja" class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+    <div id="specjalizacja" class="text-center max-w-2xl mx-auto mb-16">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> O mojej pracy
       </span>
@@ -257,7 +253,7 @@
     </div>
 
     <div class="grid md:grid-cols-3 gap-7 mb-20">
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] hover:duration-300 ease-out delay-100 bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5">
+      <div class="bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5 transition">
         <div class="w-14 h-14 rounded-2xl bg-sage-50 flex items-center justify-center mb-6">
           <i class="fa-solid fa-brain text-sage-600 text-xl"></i>
         </div>
@@ -265,7 +261,7 @@
         <p class="text-charcoal-70 text-sm leading-relaxed">Poznawczo-behawioralne podejście do lęku, depresji i trudności ze stresem — konkretne narzędzia i realne zmiany.</p>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] hover:duration-300 ease-out delay-300 bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5">
+      <div class="bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5 transition">
         <div class="w-14 h-14 rounded-2xl bg-blush-50 flex items-center justify-center mb-6">
           <i class="fa-solid fa-heart-circle-check text-blush-400 text-xl"></i>
         </div>
@@ -273,7 +269,7 @@
         <p class="text-charcoal-70 text-sm leading-relaxed">Bezpieczna przestrzeń do rozmów o bliskości, relacjach i seksualności — indywidualnie oraz w parze.</p>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] hover:duration-300 ease-out delay-500 bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5">
+      <div class="bg-white/70 backdrop-blur-md border border-white rounded-3xl p-9 shadow-sm hover:shadow-mid hover:-translate-y-1.5 transition">
         <div class="w-14 h-14 rounded-2xl bg-beige-200 flex items-center justify-center mb-6">
           <i class="fa-solid fa-music text-charcoal text-xl"></i>
         </div>
@@ -316,7 +312,7 @@
 <!-- ===================== EDUCATION TIMELINE ===================== -->
 <section class="py-24 bg-white">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
-    <div class="text-center mb-16" data-reveal>
+    <div class="text-center mb-16">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> Wykształcenie i kwalifikacje
       </span>
@@ -326,7 +322,7 @@
     <div class="relative pl-2">
       <div class="absolute left-[29px] top-2 bottom-2 w-0.5 bg-gradient-to-b from-sage-400 to-blush-400"></div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] ease-out delay-100 relative flex gap-6 pb-11">
+      <div class="relative flex gap-6 pb-11">
         <div class="w-[60px] h-[60px] rounded-full bg-cream border-2 border-sage-400 shadow-sm flex items-center justify-center flex-shrink-0 z-10">
           <i class="fa-solid fa-graduation-cap text-sage-600 text-lg"></i>
         </div>
@@ -337,7 +333,7 @@
         </div>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] ease-out delay-300 relative flex gap-6 pb-11">
+      <div class="relative flex gap-6 pb-11">
         <div class="w-[60px] h-[60px] rounded-full bg-cream border-2 border-sage-400 shadow-sm flex items-center justify-center flex-shrink-0 z-10">
           <i class="fa-solid fa-music text-sage-600 text-lg"></i>
         </div>
@@ -348,7 +344,7 @@
         </div>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] ease-out delay-500 relative flex gap-6">
+      <div class="relative flex gap-6">
         <div class="w-[60px] h-[60px] rounded-full bg-cream border-2 border-sage-400 shadow-sm flex items-center justify-center flex-shrink-0 z-10">
           <i class="fa-solid fa-heart-circle-check text-sage-600 text-lg"></i>
         </div>
@@ -360,7 +356,7 @@
       </div>
     </div>
 
-    <div class="mt-16 flex flex-col items-center" data-reveal>
+    <div class="mt-16 flex flex-col items-center">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-6">
         <span class="w-6 h-px bg-gold-500"></span> Zweryfikowany profil
       </span>
@@ -378,7 +374,7 @@
 <!-- ===================== JAK WYGLĄDA PIERWSZA WIZYTA ===================== -->
 <section class="py-24 bg-beige-50">
   <div class="max-w-6xl mx-auto px-6 lg:px-10">
-    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+    <div class="text-center max-w-2xl mx-auto mb-16">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> Zanim się zdecydujesz
       </span>
@@ -389,7 +385,7 @@
     <div class="grid md:grid-cols-3 gap-8 relative">
       <div class="hidden md:block absolute top-8 left-[16.6%] right-[16.6%] h-0.5 bg-gradient-to-r from-sage-200 via-sage-400 to-sage-200"></div>
 
-      <div class="relative text-center" data-reveal>
+      <div class="relative text-center">
         <div class="w-16 h-16 rounded-full bg-white border-2 border-sage-400 shadow-mid flex items-center justify-center mx-auto mb-6 relative z-10">
           <span class="font-serif text-xl font-bold text-sage-600">1</span>
         </div>
@@ -397,7 +393,7 @@
         <p class="text-sm text-charcoal-70 max-w-xs mx-auto">Wybierasz wygodną datę i godzinę przez system rezerwacji — zajmuje to mniej niż minutę, bez telefonów i czekania.</p>
       </div>
 
-      <div class="relative text-center" data-reveal>
+      <div class="relative text-center">
         <div class="w-16 h-16 rounded-full bg-white border-2 border-sage-400 shadow-mid flex items-center justify-center mx-auto mb-6 relative z-10">
           <span class="font-serif text-xl font-bold text-sage-600">2</span>
         </div>
@@ -405,7 +401,7 @@
         <p class="text-sm text-charcoal-70 max-w-xs mx-auto">Pierwsza rozmowa (50 min) to swobodna wymiana — opowiadasz, z czym przychodzisz, ja słucham i zadaję pytania w Twoim tempie.</p>
       </div>
 
-      <div class="relative text-center" data-reveal>
+      <div class="relative text-center">
         <div class="w-16 h-16 rounded-full bg-white border-2 border-sage-400 shadow-mid flex items-center justify-center mx-auto mb-6 relative z-10">
           <span class="font-serif text-xl font-bold text-sage-600">3</span>
         </div>
@@ -488,7 +484,7 @@
 <!-- ===================== PRICING ===================== -->
 <section id="cennik" class="py-24 bg-beige-50">
   <div class="max-w-6xl mx-auto px-6 lg:px-10">
-    <div class="text-center max-w-xl mx-auto mb-16" data-reveal>
+    <div class="text-center max-w-xl mx-auto mb-16">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> Przejrzysta oferta
       </span>
@@ -498,7 +494,7 @@
 
     <div class="grid md:grid-cols-3 gap-7">
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] hover:duration-300 ease-out delay-100 bg-white border border-stone-200 rounded-3xl p-9 flex flex-col shadow-sm hover:shadow-mid">
+      <div class="bg-white border border-stone-200 rounded-3xl p-9 flex flex-col shadow-sm hover:shadow-mid transition">
         <div class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center mb-6">
           <i class="fa-solid fa-comments text-sage-600"></i>
         </div>
@@ -516,7 +512,7 @@
         <a href="#rezerwacja" class="text-center border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-semibold py-3 rounded-full transition">Umów wizytę</a>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] ease-out delay-300 relative bg-white border-2 border-sage-600 rounded-3xl p-9 flex flex-col shadow-mid">
+      <div class="relative bg-white border-2 border-sage-600 rounded-3xl p-9 flex flex-col shadow-mid">
         <span class="absolute -top-3.5 right-8 bg-gold-500 text-white text-[11px] font-bold uppercase tracking-wide px-4 py-1.5 rounded-full shadow-sm">Najczęściej wybierana</span>
         <div class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center mb-6">
           <i class="fa-solid fa-video text-sage-600"></i>
@@ -535,7 +531,7 @@
         <a href="#rezerwacja" class="text-center bg-sage-600 hover:bg-sage-700 text-white font-semibold py-3 rounded-full transition">Umów wizytę</a>
       </div>
 
-      <div class="reveal-up opacity-0 translate-y-8 transition-all duration-[800ms] hover:duration-300 ease-out delay-500 bg-white border border-stone-200 rounded-3xl p-9 flex flex-col shadow-sm hover:shadow-mid">
+      <div class="bg-white border border-stone-200 rounded-3xl p-9 flex flex-col shadow-sm hover:shadow-mid transition">
         <div class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center mb-6">
           <i class="fa-solid fa-heart text-sage-600"></i>
         </div>
@@ -560,7 +556,7 @@
 <!-- ===================== REVIEWS ===================== -->
 <section id="opinie" class="py-24" style="background:linear-gradient(180deg, #FFFFFF 0%, #F6E5E2 100%);">
   <div class="max-w-6xl mx-auto px-6 lg:px-10">
-    <div class="text-center max-w-xl mx-auto mb-14" data-reveal>
+    <div class="text-center max-w-xl mx-auto mb-14">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> Zaufanie pacjentów
       </span>
@@ -631,7 +627,7 @@
 <!-- ===================== FAQ ===================== -->
 <section id="faq" class="py-24 bg-white">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
-    <div class="text-center mb-14" data-reveal>
+    <div class="text-center mb-14">
       <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-sage-600 mb-4">
         <span class="w-6 h-px bg-gold-500"></span> Najczęstsze pytania
       </span>
@@ -745,6 +741,22 @@
       <span>© 2026 Gabinet Psychologiczny mgr Anna Kowalkiewicz-Oligny. Wszelkie prawa zastrzeżone.</span>
       <span>Polityka prywatności &middot; Regulamin</span>
     </div>
+
+    <div class="flex justify-center mt-8">
+      <a href="https://wzntechnology.pl/" target="_blank" rel="noopener"
+         class="group inline-flex items-center gap-3 bg-charcoal hover:bg-[#3a352e] rounded-2xl px-5 py-3 transition">
+        <span class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+          <i class="fa-solid fa-code text-gold-400 text-sm"></i>
+        </span>
+        <span class="text-left">
+          <span class="block text-[10px] font-bold uppercase tracking-[0.15em] text-gold-400">Projekt &amp; wykonanie</span>
+          <span class="flex items-center gap-1.5 text-sm font-semibold text-white">
+            Oliwier Woźniakowski &middot; WZN Technology
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-white/60 group-hover:text-gold-400 transition"></i>
+          </span>
+        </span>
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -779,31 +791,6 @@
     icon.classList.toggle('fa-xmark');
   });
   mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-
-  // ---------- scroll reveal ----------
-  const revealEls = document.querySelectorAll('[data-reveal]');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  revealEls.forEach(el => revealObserver.observe(el));
-
-  // ---------- staggered scroll animations (hero text, timeline, service & pricing cards) ----------
-  const revealUpEls = document.querySelectorAll('.reveal-up');
-  const revealUpObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.remove('opacity-0', 'translate-y-8');
-        entry.target.classList.add('opacity-100', 'translate-y-0', 'is-visible');
-        revealUpObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  revealUpEls.forEach(el => revealUpObserver.observe(el));
 
   // ---------- sticky mobile bar + desktop floating CTA ----------
   const heroSection = document.getElementById('hero');
